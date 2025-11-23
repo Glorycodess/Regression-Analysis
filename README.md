@@ -44,6 +44,7 @@ cd linear_regression_model/summative/FlutterApp
 flutter pub get
 flutter run
 
-Live Demo on YouTube
+###Live Demo on YouTube###
 Watch the full app + API demo here:
-https://youtu.be/_iSXXStC28M
+
+https://www.youtube.com/watch?v=_iSXXStC28M
