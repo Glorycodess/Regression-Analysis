@@ -35,7 +35,7 @@ This enables engineers to optimize concrete mixes for both strength and environm
 
 ### Flutter Mobile App Instructions  
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/linear_regression_model.git
+git clone https://github.com/Glorycodess/linear_regression_model.git
 cd linear_regression_model/summative/FlutterApp
 flutter pub get
 flutter run
@@ -43,18 +43,18 @@ flutter run
 The app features:
 
 9 input fields (exact match to model features)
-"PREDICT STRENGTH" button
-Beautiful result card with predicted MPa + sustainability metrics
-Full error handling and history
+“PREDICT STRENGTH” button
+Beautiful result card with predicted strength in MPa + sustainability metrics
+Full error handling and prediction history
 
 YouTube Demo Video (4:50)
 https://youtu.be/YOUR_VIDEO_LINK_HERE
-What it shows:
+What the video shows:
 
-Live mobile app prediction
-Flutter code calling the API
-Swagger UI testing (valid + invalid inputs)
-Model comparison & justification from Jupyter notebook
+Live mobile app making real predictions
+Flutter code calling the public API
+Swagger UI testing (valid inputs + range violation errors)
+Model comparison and justification from the Jupyter notebook
 Presenter camera ON throughout
 
 Requirements / Dependencies
@@ -73,21 +73,5 @@ YAMLdependencies:
   http: ^1.2.2
   google_fonts: ^6.2.1
   intl: ^0.19.0
-Folder Structure (as required):
-textlinear_regression_model/
-└── summative/
-    ├── linear_regression/
-    │   └── multivariate.ipynb
-    ├── API/
-    │   ├── prediction.py
-    │   └── requirements.txt
-    └── FlutterApp/
 Submitted by: [Your Full Name]
 Date: November 2025
-text**Just do this now:**  
-1. Replace `YOUR_GITHUB_USERNAME`  
-2. Replace `YOUR_VIDEO_LINK_HERE` after uploading  
-3. Paste into your repo root as `README.md`
-
-You’re **100% ready** to submit and get top marks.  
-Go finish that video — you’ve earned this!
