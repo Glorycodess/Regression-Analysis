@@ -1,16 +1,32 @@
-# concrete_predictor
+# Concrete Compressive Strength & Sustainability Predictor
 
-A new Flutter project.
+**Description of mission and problem**  
+Develop a multivariate regression model to predict concrete compressive strength along with embodied CO₂, energy consumption, and resource depletion from mix design parameters. The model is deployed as a public REST API and consumed by a clean, user-friendly Flutter mobile application for instant predictions.
 
-## Getting Started
+**Publicly available API endpoint**  
+https://regression-analysis.onrender.com  
 
-This project is a starting point for a Flutter application.
+Test directly here (Swagger UI):  
+https://regression-analysis.onrender.com/docs  
 
-A few resources to get you started if this is your first Flutter project:
+Endpoint: `POST /predict`  
+(No authentication required – fully public and routable)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+**YouTube demo video (≤ 5 minutes)**  
+https://youtu.be/XXXXXX  
+*(Replace with your actual unlisted/public link after upload)*
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**How to run the mobile app**
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/YOUR_USERNAME/linear_regression_model.git
+
+# 2. Go to the Flutter app folder
+cd linear_regression_model/summative/FlutterApp
+
+# 3. Install dependencies
+flutter pub get
+
+# 4. Run the app (phone connected or emulator running)
+flutter run
