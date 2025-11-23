@@ -1,41 +1,31 @@
 # Concrete Compressive Strength & Sustainability Predictor
 
-### Short Description
-A multivariate regression model that predicts **28-day concrete compressive strength** and key **sustainability metrics** (embodied CO₂, energy consumption, resource depletion) directly from mix design inputs.
+<a href="https://youtu.be/_iSXXStC28M" target="_blank">
+  <img src="https://img.youtube.com/vi/_iSXXStC28M/maxresdefault.jpg" alt="Watch the Live Demo" width="100%" style="border-radius:12px; box-shadow: 0 8px 25px rgba(0,0,0,0.4);"/>
+</a>
 
-The trained model is deployed as a **public FastAPI endpoint** and consumed by a clean, user-friendly **Flutter mobile application** for instant, real-time predictions.
+<p align="center">
+  <a href="https://youtu.be/_iSXXStC28M" target="_blank"><h2>Watch Live Demo Video (Click the image above)</h2></a>
+</p>
 
-This enables engineers to optimize concrete mixes for both **maximum strength** and **minimum environmental impact** — faster and more sustainably.
+**Predicts concrete compressive strength + sustainability metrics (CO₂, energy, resource depletion) from mix design inputs.**  
+Trained Random Forest model deployed as a public FastAPI endpoint.  
+Instant real-time predictions via a beautiful Flutter mobile app.  
+Helps engineers create stronger, greener concrete — fast and sustainably.
 
-### Dataset Information
-- **Source**: Kaggle – "Concrete Compressive Strength Data Set" + extended sustainability features  
-- **Link**: https://www.kaggle.com/datasets/pritamdas/concrete-compressive-strength-data  
-- **Size**: 1,030 instances, 9 input features + 1 target (compressive strength)  
-- **Preprocessing**:
-  - All features converted to numeric
-  - Standardized using `StandardScaler`
-  - No missing values, outliers handled via robust scaling
+### Dataset
+- Source: Kaggle (extended with sustainability features)  
+- Link: https://www.kaggle.com/datasets/pritamdas/concrete-compressive-strength-data  
+- 1,030 samples | 9 input features | Preprocessed & standardized
 
-### Visualizations
-1. **Correlation Heatmap** – Revealed strong positive correlation of cement and age with strength, negative correlation with water.
-2. **Distribution Histograms + Scatter Plots** – Showed relationships between cement, water/cement ratio, superplasticizer, and final strength.
+### Best Model
+Random Forest Regressor → `best_model.pkl`
 
-### Models Built
-- Linear Regression (scikit-learn + gradient descent via `SGDRegressor`)
-- Random Forest Regressor
-- Decision Tree Regressor
-
-**Best Model**: Random Forest Regressor (lowest MSE & highest R²) → saved as `best_model.pkl`
-
-### API Endpoint (Public & Free to Use)
-- **Base URL**: https://regression-analysis.onrender.com  
-- **Direct Prediction Endpoint**: https://regression-analysis.onrender.com/predict  
-- **Interactive Swagger UI (Test it live)**: https://regression-analysis.onrender.com/docs  
-
-Features:
-- Pydantic validation with strict data types and realistic ranges
-- CORS enabled
-- No authentication required
+### Public API
+- Base URL: https://regression-analysis.onrender.com  
+- Predict: https://regression-analysis.onrender.com/predict  
+- Swagger UI: https://regression-analysis.onrender.com/docs  
+(No auth • CORS enabled • Pydantic validation)
 
 ### Flutter Mobile App
 ```bash
@@ -43,8 +33,3 @@ git clone https://github.com/Glorycodess/linear_regression_model.git
 cd linear_regression_model/summative/FlutterApp
 flutter pub get
 flutter run
-
-###Live Demo on YouTube###
-Watch the full app + API demo here:
-
-https://www.youtube.com/watch?v=_iSXXStC28M
