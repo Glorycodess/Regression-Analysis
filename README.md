@@ -22,8 +22,7 @@ Helps engineers create stronger, greener concrete — fast and sustainably.
 Random Forest Regressor → `best_model.pkl`
 
 ### Public API
-- Base URL: https://regression-analysis.onrender.com  
-- Predict: https://regression-analysis.onrender.com/predict  
+- Base URL: https://regression-analysis.onrender.com   
 - Swagger UI: https://regression-analysis.onrender.com/docs  
 (No auth • CORS enabled • Pydantic validation)
 
